@@ -1,6 +1,7 @@
 defmodule LiveViewDemoWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :live_view_demo
 
+  socket "/live", Phoenix.LiveView.Socket
   socket "/socket", LiveViewDemoWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.

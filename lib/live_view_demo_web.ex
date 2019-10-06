@@ -23,6 +23,7 @@ defmodule LiveViewDemoWeb do
       import Plug.Conn
       import LiveViewDemoWeb.Router.Helpers
       import LiveViewDemoWeb.Gettext
+      import Phoenix.LiveView.Controller
     end
   end
 
@@ -40,6 +41,8 @@ defmodule LiveViewDemoWeb do
       import LiveViewDemoWeb.Router.Helpers
       import LiveViewDemoWeb.ErrorHelpers
       import LiveViewDemoWeb.Gettext
+      import Phoenix.LiveView,
+      only: [live_render: 2, live_render: 3, live_link: 1, live_link: 2]
     end
   end
 
@@ -48,6 +51,7 @@ defmodule LiveViewDemoWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Router
     end
   end
 

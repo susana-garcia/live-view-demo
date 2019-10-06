@@ -45,6 +45,8 @@ defmodule LiveViewDemo.Mixfile do
       {:gettext, "~> 0.11"},
       {:plug_cowboy, "~> 2.0"},
       {:jason, "~> 1.0"},
+      {:phoenix_live_view, "~> 0.3.0"},
+      {:floki, ">= 0.0.0", only: :test},
       {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0-rc", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.4", only: [:dev, :test], runtime: false}
